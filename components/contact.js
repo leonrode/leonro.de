@@ -8,16 +8,14 @@ import discordSvg from "../public/discord-logo.svg";
 import styles from "../styles/contact.module.css";
 import dividerStyle from "../styles/divider.module.css";
 
-import { isMobile } from "react-device-detect";
-
-export default function Contact({ slideState }) {
-  const ICON_SIZE = isMobile ? "40" : "60";
+export default function Contact({ slideState, smallIcons }) {
+  const ICON_SIZE = smallIcons ? "40" : "60";
   return (
     <div className={[styles.contact, slideState].join(" ")}>
       <h5 className={dividerStyle.mobileDivider}>contact</h5>
       <h2 className={styles.header}>
-        You can contact me through any {!isMobile ? <br /> : ""}of the following
-        platforms
+        You can contact me through any {!smallIcons ? <br /> : ""}of the
+        following platforms
       </h2>
 
       <div className={styles.contactOptions}>

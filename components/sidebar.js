@@ -56,7 +56,6 @@ function generateSidebar(pageIndex, slideState, pageSetter) {
 }
 
 export default function Sidebar({ currentPage, pageSetter, slideState }) {
-  console.log(currentPage);
   return (
     <div className={styles.sidebar}>
       {currentPage !== 0 ? (

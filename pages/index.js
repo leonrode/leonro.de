@@ -4,16 +4,14 @@ import Main from "../components/main";
 import Sidebar from "../components/sidebar";
 
 import { useEffect, useState } from "react";
-import { isMobile } from "react-device-detect";
 
 export default function Home() {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [slideState, setSlideState] = useState(null);
-  const [windowWidth, setWindowWidth] = useState(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(null);
 
   useEffect(() => {
-    setWindowWidth(window.innerWidth);
-    console.log(window.innerWidth);
+    setIsSmallScreen(window.innerWidth < 1368);
   });
   function changePage(newPage) {
     const animationDurationMs = 300;
@@ -84,10 +82,10 @@ export default function Home() {
       <Main
         currentPage={currentPageIndex}
         slideState={slideState}
-        all={windowWidth < 1368}
-        smallIcons={windowWidth < 1368}
+        all={isSmallScreen}
+        smallIcons={isSmallScreen}
       />
-      {windowWidth > 1368 && (
+      {!isSmallScreen && (
         <Sidebar
           currentPage={currentPageIndex}
           pageSetter={changePage}

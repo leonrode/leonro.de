@@ -30,7 +30,12 @@ function generatePage(pageIndex, slideState, smallIcons) {
     case 4:
       return <Work slideState={slideState !== null ? slideState : null} />;
     case 5:
-      return <Contact slideState={slideState !== null ? slideState : null} />;
+      return (
+        <Contact
+          slideState={slideState !== null ? slideState : null}
+          smallIcons={smallIcons}
+        />
+      );
   }
 }
 
@@ -45,7 +50,7 @@ export default function Main({ currentPage, slideState, all, smallIcons }) {
           <Skills smallIcons={smallIcons} />
           <Projects smallIcons={smallIcons} />
           <Work />
-          <Contact />
+          <Contact smallIcons={smallIcons} />
           <h6 className={styles.bottom}>Leon Rode - 2021</h6>
         </>
       )}
