@@ -14,7 +14,7 @@
   font-weight: 300;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1368px) {
   .text {
     font-size: 1.3rem;
     margin: 50px 20px 0px 20px;

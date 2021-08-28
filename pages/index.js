@@ -3,13 +3,18 @@ import Head from "next/head";
 import Main from "../components/main";
 import Sidebar from "../components/sidebar";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
 
 export default function Home() {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [slideState, setSlideState] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(null);
 
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    console.log(window.innerWidth);
+  });
   function changePage(newPage) {
     const animationDurationMs = 300;
     if (newPage < currentPageIndex) {
@@ -79,9 +84,10 @@ export default function Home() {
       <Main
         currentPage={currentPageIndex}
         slideState={slideState}
-        all={isMobile}
+        all={windowWidth < 1368}
+        smallIcons={windowWidth < 1368}
       />
-      {!isMobile && (
+      {windowWidth > 1368 && (
         <Sidebar
           currentPage={currentPageIndex}
           pageSetter={changePage}

@@ -7,16 +7,26 @@ import Projects from "./projects";
 import Work from "./work";
 import Contact from "./contact";
 
-function generatePage(pageIndex, slideState) {
+function generatePage(pageIndex, slideState, smallIcons) {
   switch (pageIndex) {
     case 0:
       return <Home slideState={slideState !== null ? slideState : null} />;
     case 1:
       return <About slideState={slideState !== null ? slideState : null} />;
     case 2:
-      return <Skills slideState={slideState !== null ? slideState : null} />;
+      return (
+        <Skills
+          smallIcons={smallIcons}
+          slideState={slideState !== null ? slideState : null}
+        />
+      );
     case 3:
-      return <Projects slideState={slideState !== null ? slideState : null} />;
+      return (
+        <Projects
+          smallIcons={smallIcons}
+          slideState={slideState !== null ? slideState : null}
+        />
+      );
     case 4:
       return <Work slideState={slideState !== null ? slideState : null} />;
     case 5:
@@ -24,16 +34,16 @@ function generatePage(pageIndex, slideState) {
   }
 }
 
-export default function Main({ currentPage, slideState, all }) {
+export default function Main({ currentPage, slideState, all, smallIcons }) {
   return (
     <div className={styles.main}>
-      {!all && generatePage(currentPage, slideState)}
+      {!all && generatePage(currentPage, slideState, smallIcons)}
       {all && (
         <>
           <Home />
           <About />
-          <Skills />
-          <Projects />
+          <Skills smallIcons={smallIcons} />
+          <Projects smallIcons={smallIcons} />
           <Work />
           <Contact />
           <h6 className={styles.bottom}>Leon Rode - 2021</h6>

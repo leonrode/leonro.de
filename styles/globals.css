@@ -9,7 +9,7 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1368px) {
   html, body {
     height: fit-content;
     overflow: visible;

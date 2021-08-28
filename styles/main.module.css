@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1368px) {
   .main {
     flex-direction: column;
     height: fit-content;

@@ -47,7 +47,7 @@
   transform: scaleX(1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1368px) {
   .projectLink {
     font-size: 1.7rem;
   }

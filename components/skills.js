@@ -1,9 +1,7 @@
 import styles from "../styles/skills.module.css";
 import dividerStyle from "../styles/divider.module.css";
 
-import { isMobile } from "react-device-detect";
-
-export default function Skills({ slideState }) {
+export default function Skills({ slideState, smallIcons }) {
   const webTechs = [
     "javascript",
     "css",
@@ -18,7 +16,7 @@ export default function Skills({ slideState }) {
   ];
 
   const scriptingTechs = ["python", "arduino", "c++"];
-  const ICON_SIZE = isMobile ? "40" : "60";
+  const ICON_SIZE = smallIcons ? "40" : "60";
   return (
     <div className={[styles.skills, slideState].join(" ")}>
       <h5 className={dividerStyle.mobileDivider}>skills</h5>

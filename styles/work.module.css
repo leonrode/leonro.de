@@ -35,7 +35,7 @@
   transform: scaleX(1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1368px) {
   .workContainer {
     margin-top: 0px;
   }
