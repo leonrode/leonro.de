@@ -1,0 +1,23 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .bottom {
+    background: linear-gradient(90deg, #ff00cc, #e21ecb, #c52ac7, #a931c2, #8c34ba, #6f36b1, #5235a6, #333399);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+}

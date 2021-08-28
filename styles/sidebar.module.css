@@ -1,0 +1,48 @@
+.sidebar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100vw - 500px);
+  height: 50vh;
+  width: 500px;
+  border-left: 1px solid #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 300px;
+}
+.arrowUpContainer, .arrowDownContainer {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: 1s cubic-bezier(0.16, 1, 0.3, 1) transform;
+}
+
+.arrowUpContainer:hover {
+  transform: translateY(-10px);
+}
+
+.arrowDownContainer:hover {
+  transform: translateY(10px);
+}
+
+.arrowDownContainer:hover > .sidebarArrowBorder, .arrowUpContainer:hover > .sidebarArrowBorder {
+  opacity: 1;
+}
+
+.sidebarText {
+  background: linear-gradient(90deg, #ff00cc, #e21ecb, #c52ac7, #a931c2, #8c34ba, #6f36b1, #5235a6, #333399);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.sidebarArrowBorder {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, #ff00cc, #e21ecb, #c52ac7, #a931c2, #8c34ba, #6f36b1, #5235a6, #333399);
+  opacity: 0;
+  transition: 1s cubic-bezier(0.16, 1, 0.3, 1) opacity;
+}
