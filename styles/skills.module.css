@@ -28,6 +28,7 @@
 .tech {
   margin: 10px 20px;
   user-select: none;
+  scale: 0.8;
 }
 
 .techContainer:hover {
