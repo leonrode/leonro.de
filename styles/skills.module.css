@@ -26,9 +26,9 @@
 }
 
 .tech {
-  margin: 10px 20px;
+  margin: 7px 15px;
   user-select: none;
-  scale: 0.8;
+  transform: scale(0.8);
 }
 
 .techContainer:hover {
