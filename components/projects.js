@@ -4,7 +4,7 @@ import dividerStyle from "../styles/divider.module.css";
 
 export default function Projects({ slideState }) {
   const covidTechs = ["next.js", "node.js", "mongodb", "react.js", "css"];
-  const sudokuTechs = ["html", "css", "javascript", "node.js", "socket.io"];
+  const triangleTechs = ["javascript", "p5js"];
   const joystickTechs = ["c++", "arduino"];
   const ICON_SIZE = "40";
   return (
@@ -41,17 +41,20 @@ export default function Projects({ slideState }) {
       </div>
       <div className={styles.projectContainer}>
         <div className={styles.linkContainer}>
-          <a className={styles.projectLink} href="https://twosudoku.xyz">
-            twosudoku.xyz
+          <a
+            className={styles.projectLink}
+            href="https://github.com/leonrode/chaotic-sierpinski-triangle"
+          >
+            chaotic Sierpinski triangle
           </a>
           <span className={styles.projectLinkUnderline}></span>
         </div>
 
         <h4 className={styles.projectDesc}>
-          real-time online multiplayer sudoku
+          generate Sierpinski triangles using the Chaos Game algorithm
         </h4>
         <div className={styles.projectTechsContainer}>
-          {sudokuTechs.map((tech) => (
+          {triangleTechs.map((tech) => (
             <div className={skillStyles.techContainer} key={tech}>
               <img
                 className={skillStyles.tech}
@@ -59,6 +62,7 @@ export default function Projects({ slideState }) {
                 alt={tech}
                 width={ICON_SIZE}
                 height={ICON_SIZE}
+                key={tech}
               />
               <h5 className={skillStyles.techText}>{tech}</h5>
             </div>
