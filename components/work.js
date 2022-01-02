@@ -17,10 +17,10 @@ export default function Work({ slideState }) {
         </div>
 
         <div className={styles.workDescContainer}>
-          <h5 className={styles.workDesc}>3 months</h5>
+          <h5 className={styles.workDesc}>6 months</h5>
           <h5 className={styles.workDesc}>5 star rating</h5>
-          <h5 className={styles.workDesc}>5+ orders</h5>
-          <h5 className={styles.workDesc}>600+ impressions</h5>
+          <h5 className={styles.workDesc}>8+ orders</h5>
+          <h5 className={styles.workDesc}>1.8k+ impressions</h5>
           <h5 className={styles.workDesc}>100% order completion</h5>
         </div>
       </div>
