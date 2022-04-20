@@ -16,21 +16,21 @@ const Logo = () => {
             y2="0"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#ff00cc" />
+            <stop offset="0" stopColor="#ff00cc" />
 
-            <stop offset="0.14285714285714285" stop-color="#e21ecb" />
+            <stop offset="0.14285714285714285" stopColor="#e21ecb" />
 
-            <stop offset="0.2857142857142857" stop-color="#c52ac7" />
+            <stop offset="0.2857142857142857" stopColor="#c52ac7" />
 
-            <stop offset="0.42857142857142855" stop-color="#a931c2" />
+            <stop offset="0.42857142857142855" stopColor="#a931c2" />
 
-            <stop offset="0.5714285714285714" stop-color="#8c34ba" />
+            <stop offset="0.5714285714285714" stopColor="#8c34ba" />
 
-            <stop offset="0.7142857142857142" stop-color="#6f36b1" />
+            <stop offset="0.7142857142857142" stopColor="#6f36b1" />
 
-            <stop offset="0.8571428571428571" stop-color="#5235a6" />
+            <stop offset="0.8571428571428571" stopColor="#5235a6" />
 
-            <stop offset="1" stop-color="#333399" />
+            <stop offset="1" stopColor="#333399" />
           </linearGradient>
         </defs>
 
