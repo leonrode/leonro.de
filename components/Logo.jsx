@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="w-8 h-8">
+    <div className="w-6 h-6">
       <svg
         id="Layer_1"
         data-name="Layer 1"

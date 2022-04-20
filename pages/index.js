@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <Layout>
       <section className="h-full flex flex-col items-center justify-center">
-        <h1 className="text-text font-light text-5xl">
+        <h1 className="text-center text-text font-light text-5xl">
           Hi, I&apos;m <span className="font-bold text-primary">Leon Rode</span>
         </h1>
         <p className="mt-8 text-2xl font-light text-alt">
