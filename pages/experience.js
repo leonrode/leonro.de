@@ -1,31 +1,39 @@
 import Layout from "../components/Layout";
 import Tag from "../components/Tag";
+
+import projects from "../projects";
+import Project from "../components/Project";
 const Experience = () => {
+  console.log(projects);
   return (
     <Layout>
-      <section className="flex flex-col h-full justify-center items-center">
+      <section className="flex flex-col h-full  items-center">
         <h1 className="text-center font-bold text-primary text-5xl">
           Projects &amp; Skills
         </h1>
-        <div className="my-8 flex flex-col w-full items-center">
-          <div className="flex items-center w-full lg:w-3/5 justify-between">
+        <p className="text-alt mt-8">Filter projects by tech</p>
+        <div className="mt-4 my-8 flex flex-col w-full items-center">
+          <div className="flex items-center w-full md:w-3/4 lg:w-2/5 justify-between">
             <Tag text="mongodb" />
             <Tag text="python 3" />
             <Tag text="javascript" />
             <Tag text="node.js" />
           </div>
-          <div className="my-8 flex items-center w-3/4 lg:w-2/5 justify-between">
+          <div className="my-8 flex items-center w-3/4 md:w-1/2 lg:w-3/12 justify-between">
             <Tag text="html" />
             <Tag text="css" />
             <Tag text="react.js" />
           </div>
-          <div className="flex items-center w-full lg:w-3/5 justify-between">
+          <div className="flex items-center w-full md:w-3/4 lg:w-2/5 justify-between">
             <Tag text="next.js" />
             <Tag text="aws s3" />
-            <Tag text="socket.io" />
+            <Tag text="tailwindcss" />
             <Tag text="p5.js" />
           </div>
         </div>
+        {projects.map((project, i) => (
+          <Project imageOnLeft={i % 2 == 1} project={project} />
+        ))}
       </section>
     </Layout>
   );

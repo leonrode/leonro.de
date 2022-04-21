@@ -1,6 +1,6 @@
 const Tag = ({ text }) => {
   return (
-    <div className="text-text text-sm lg:text-base rounded-lg font-light bg-elevated w-20 lg:w-28 flex  py-2 items-center justify-center">
+    <div className="border-2 hover:border-primary border-transparent transition text-text text-sm lg:text-base rounded-lg font-light bg-elevated w-20 lg:w-28 flex  py-2 items-center justify-center">
       {text}
     </div>
   );
