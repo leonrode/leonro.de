@@ -3,16 +3,20 @@ import Tag from "../components/Tag";
 
 import projects from "../projects";
 import Project from "../components/Project";
+
+import { useState } from "react";
+
 const Experience = () => {
-  console.log(projects);
+  const [selectedTags, setSelectedTags] = useState([]);
+
   return (
     <Layout>
       <section className="flex flex-col h-full  items-center">
         <h1 className="text-center font-bold text-primary text-5xl">
           Projects &amp; Skills
         </h1>
-        <p className="text-alt mt-8">Filter projects by tech</p>
-        <div className="mt-4 my-8 flex flex-col w-full items-center">
+        <p className="text-alt mt-16">Filter projects by tech</p>
+        <div className="mt-4 mb-48 my-8 flex flex-col w-full items-center">
           <div className="flex items-center w-full md:w-3/4 lg:w-2/5 justify-between">
             <Tag text="mongodb" />
             <Tag text="python 3" />
