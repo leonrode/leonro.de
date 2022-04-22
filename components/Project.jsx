@@ -26,9 +26,14 @@ const Project = ({ imageOnLeft, project }) => {
         <Link href={project.repoUrl}>
           <FiGithub size={30} className="cursor-pointer text-text" />
         </Link>
-        <Link href={project.demoUrl}>
-          <FiExternalLink size={30} className="ml-4 cursor-pointer text-text" />
-        </Link>
+        {project.demoUrl && (
+          <Link href={project.demoUrl}>
+            <FiExternalLink
+              size={30}
+              className="ml-4 cursor-pointer text-text"
+            />
+          </Link>
+        )}
       </div>
     </div>,
   ];

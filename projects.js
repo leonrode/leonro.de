@@ -23,6 +23,62 @@ const projects = [
     demoUrl: "https://mazzle.vercel.app/",
     tags: ["next.js", "tailwindcss", "react.js", "mongodb", "javascript"],
   },
+  {
+    title: "Sports Photo Gallery",
+    description:
+      "This site was built for a friend looking to dive into sports photography." +
+      " It showcases hundreds of photos in an event-by-event basis, allowing users to filter and sort the events in a given year." +
+      " The photos are stored in an AWS S3 Bucket and uploaded using a custom Python 3 uploader client." +
+      " The site was built using Next.js and TailwindCSS, with data being stored in a MongoDB Atlas database.",
+    imageUrl: "https://i.imgur.com/dW4BQy4.png",
+    repoUrl: "https://github.com/leonrode/sports-photo-app",
+    demoUrl: "https://elliottzphoto.us/",
+    tags: [
+      "next.js",
+      "tailwindcss",
+      "react.js",
+      "mongodb",
+      "javascript",
+      "aws s3",
+      "python 3",
+    ],
+  },
+  {
+    title: "Procedural Skylines",
+    description:
+      "This is a creative coding project where I used various techniques to generate procedural skylines." +
+      " It is entirely built with Javascript and the p5.js canvas library.",
+    imageUrl:
+      "https://camo.githubusercontent.com/7282ee3790229667da1c885c8c8f4b02e003033bad1d753a6e54aeba80f7706b/68747470733a2f2f692e696d6775722e636f6d2f74446f6c7a576a2e706e67",
+    repoUrl: "https://github.com/leonrode/procedural-skyline",
+    demoUrl: "https://editor.p5js.org/leonrode/sketches/-gDtuWeYS",
+    tags: ["javascript", "p5.js"],
+  },
+  {
+    title: "Chaotic Sierpinski Triangles",
+    description:
+      "This creative project generates classic Sierpinski Triangles, in other words, triangles infinitely composed of smaller triangles " +
+      " It implements the Chaos game algorithm that builds the triangle with hints of randomness" +
+      " After 15 seconds, a representation of the triangle becomes clear to the viewer." +
+      " It is built using p5.js and Javascript",
+    imageUrl:
+      "https://camo.githubusercontent.com/f7e8023e3fd4a92a9f6819f1ea2a222b7be5e91c781cd0f5a7e20d3d6678df5c/68747470733a2f2f692e696d6775722e636f6d2f656d5a723448552e706e67",
+    repoUrl: "https://github.com/leonrode/chaotic-sierpinski-triangle",
+    demoUrl: "https://editor.p5js.org/leonrode/sketches/Em7nY-9eW",
+    tags: ["javascript", "p5.js"],
+  },
+  {
+    title: "Solo Chess Solver",
+    description:
+      "This original project is a successful attempt at solving Chess.com's SoloChess game mode. " +
+      " It recursively builds a solution to the puzzles by reading the board and displaying a list of moves to successfully solve the puzzles. " +
+      " It solves most problems in under a tenth of a second, and can solve the most challenging ones in within a few seconds" +
+      " The entire script is written in JavaScript",
+    imageUrl:
+      "https://camo.githubusercontent.com/626d5bf854160f7d65ea51a79aea1f60b3fe173ffba40967dfe8adf967f23b48/68747470733a2f2f696d6775722e636f6d2f773763376831532e706e67",
+    repoUrl: "https://github.com/leonrode/solo-chess-solver-js",
+    tags: ["javascript"],
+  },
 ];
 
 export default projects;
