@@ -10,9 +10,10 @@ module.exports = {
         elevated: "#403C3E",
         text: "#EEEEEE",
         primary: "#E21ECB",
+        darkPrimary: "#5235a6",
         alt: "#C6B9BF",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 };

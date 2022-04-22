@@ -4,6 +4,8 @@ import Tag from "../components/Tag";
 import projects from "../projects";
 import Project from "../components/Project";
 
+import Header from "../components/Header";
+
 import { useState } from "react";
 
 const Experience = () => {
@@ -22,13 +24,12 @@ const Experience = () => {
   return (
     <Layout>
       <section className="flex flex-col h-full  items-center">
-        <h1 className="text-center font-bold text-primary text-5xl">
-          Projects &amp; Skills
-        </h1>
-        <p className="text-alt mt-16">
-          Show projects made with any of these techs
+        <Header text="Projects &amp; Skills" />
+
+        <p className="text-center text-alt mt-16">
+          Show public projects made with any of these techs
         </p>
-        <div className="mt-4 mb-48 my-8 flex flex-col w-full items-center">
+        <div className="mt-4 mb-24 my-8 flex flex-col w-full items-center">
           <div className="flex items-center w-full md:w-3/4 lg:w-2/5 justify-between">
             {topTags.map((tag) => (
               <Tag

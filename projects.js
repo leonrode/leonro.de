@@ -9,7 +9,15 @@ const projects = [
       "https://camo.githubusercontent.com/a32a834663d026aaa4c6d9b540425d1463f6b02e6ba3848a1d5b5a809f50684f/68747470733a2f2f692e696d6775722e636f6d2f7830736e3662552e706e67",
     repoUrl: "https://github.com/leonrode/westchestercovidtracker.com",
     demoUrl: "https://westchestercovidtracker.com",
-    tags: ["next.js", "react.js", "mongodb", "python3", "javascript", "css"],
+    tags: [
+      "next.js",
+      "react.js",
+      "node.js",
+      "mongodb",
+      "python3",
+      "javascript",
+      "css",
+    ],
   },
   {
     title: "Mazzle",
@@ -21,7 +29,14 @@ const projects = [
     imageUrl: "https://i.imgur.com/luBHY0e.png",
     repoUrl: "https://github.com/leonrode/mazzle",
     demoUrl: "https://mazzle.vercel.app/",
-    tags: ["next.js", "tailwindcss", "react.js", "mongodb", "javascript"],
+    tags: [
+      "next.js",
+      "tailwindcss",
+      "node.js",
+      "react.js",
+      "mongodb",
+      "javascript",
+    ],
   },
   {
     title: "Sports Photo Gallery",
@@ -36,6 +51,7 @@ const projects = [
     tags: [
       "next.js",
       "tailwindcss",
+      "node.js",
       "react.js",
       "mongodb",
       "javascript",
@@ -70,10 +86,10 @@ const projects = [
   {
     title: "Solo Chess Solver",
     description:
-      "This original project is a successful attempt at solving Chess.com's SoloChess game mode. " +
-      " It recursively builds a solution to the puzzles by reading the board and displaying a list of moves to successfully solve the puzzles. " +
-      " It solves most problems in under a tenth of a second, and can solve the most challenging ones in within a few seconds" +
-      " The entire script is written in JavaScript",
+      "This original project is a successful attempt at solving Chess.com's SoloChess game mode." +
+      " It recursively builds a solution to the puzzles by reading the board and displaying a list of moves to successfully solve the puzzles." +
+      " It solves most problems in under a tenth of a second, and can solve the most challenging ones in within a few seconds." +
+      " The entire script is written in JavaScript.",
     imageUrl:
       "https://camo.githubusercontent.com/626d5bf854160f7d65ea51a79aea1f60b3fe173ffba40967dfe8adf967f23b48/68747470733a2f2f696d6775722e636f6d2f773763376831532e706e67",
     repoUrl: "https://github.com/leonrode/solo-chess-solver-js",

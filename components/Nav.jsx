@@ -15,15 +15,20 @@ const Nav = () => {
     <nav className="flex items-center justify-between">
       <Logo />
       <div className="hidden md:flex justify-between items-center w-1/2 lg:w-1/3">
-        <span className="text-text text-xl font-light">
+        <div className="group flex flex-col text-text text-xl font-light">
           <Link href="/experience">experience</Link>
-        </span>
-        <span className="text-text text-xl font-light">
-          <Link href="/experience">biography</Link>
-        </span>
-        <span className="text-text text-xl font-light">
-          <Link href="/experience">social</Link>
-        </span>
+          <span className="group-hover:w-full w-0 transition-[width] bg-gradient-to-r from-primary to-darkPrimary  h-[2px]"></span>
+        </div>
+        <div className="group flex flex-col text-text text-xl font-light">
+          <Link href="/biography">biography</Link>
+          <span className="group-hover:w-full w-0 transition-[width] bg-gradient-to-r from-primary to-darkPrimary  h-[2px]"></span>
+        </div>
+        <div className="group flex flex-col text-text text-xl font-light">
+          <Link href="/social">social</Link>
+          <span className="group-hover:w-full w-0 transition-[width] bg-gradient-to-r from-primary to-darkPrimary  h-[2px]"></span>
+        </div>
+
+
       </div>
       <FiMenu
         onClick={() => setShowMobile(true)}
