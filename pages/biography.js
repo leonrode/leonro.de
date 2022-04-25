@@ -36,7 +36,7 @@ const Biography = () => {
           </p>
         </div>
 
-        <Link href="/experience">
+        <Link href="/social">
           <div className="mt-16 px-8 py-2 border-2 border-primary cursor-pointer">
             <span className="text-text font-bold">contact me</span>
           </div>
