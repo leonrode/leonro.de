@@ -26,8 +26,8 @@ const Experience = () => {
       <section className="flex flex-col h-full  items-center">
         <Header text="Projects &amp; Skills" />
 
-        <p className="text-center text-alt mt-16">
-          Show public projects made with any of these techs
+        <p className="text-center text-text mt-16">
+          Show projects made with any of these techs
         </p>
         <div className="mt-4 mb-24 my-8 flex flex-col w-full items-center">
           <div className="flex items-center w-full md:w-3/4 lg:w-2/5 justify-between">

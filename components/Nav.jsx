@@ -16,7 +16,7 @@ const Nav = () => {
       <Logo />
       <div className="hidden md:flex justify-between items-center w-1/2 lg:w-1/3">
         <div className="group flex flex-col text-text text-xl font-light">
-          <Link href="/experience">experience</Link>
+          <Link href="/experience">projects &amp; skills</Link>
           <span className="group-hover:w-full w-0 transition-[width] bg-gradient-to-r from-primary to-darkPrimary  h-[2px]"></span>
         </div>
         <div className="group flex flex-col text-text text-xl font-light">
@@ -27,8 +27,6 @@ const Nav = () => {
           <Link href="/social">social</Link>
           <span className="group-hover:w-full w-0 transition-[width] bg-gradient-to-r from-primary to-darkPrimary  h-[2px]"></span>
         </div>
-
-
       </div>
       <FiMenu
         onClick={() => setShowMobile(true)}

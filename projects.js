@@ -15,6 +15,7 @@ const projects = [
       "node.js",
       "mongodb",
       "python3",
+      "html",
       "javascript",
       "css",
     ],
@@ -36,6 +37,7 @@ const projects = [
       "react.js",
       "mongodb",
       "javascript",
+      "html",
     ],
   },
   {
@@ -57,6 +59,7 @@ const projects = [
       "javascript",
       "aws s3",
       "python 3",
+      "html",
     ],
   },
   {

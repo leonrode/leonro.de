@@ -14,7 +14,7 @@ const MobileNav = ({ show, toShow, toClose }) => {
       <FiX onClick={toClose} className="text-text" size={35} />
       <div className="my-16 flex flex-col items-center">
         <span className="text-text text-xl font-light">
-          <Link href="/experience">experience</Link>
+          <Link href="/experience">projects &amp; skills</Link>
         </span>
         <span className="mt-8 text-text text-xl font-light">
           <Link href="/experience">biography</Link>

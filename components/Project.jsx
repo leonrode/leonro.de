@@ -1,10 +1,8 @@
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
-
 import Link from "next/link";
 
 const Project = ({ imageOnLeft, project }) => {
-
   const component = [
     <img className="rounded-lg w-full lg:w-1/2" src={project.imageUrl} />,
     <div
@@ -19,10 +17,12 @@ const Project = ({ imageOnLeft, project }) => {
         {project.description}
       </p>
 
-      <div className="mx-2 mt-4 flex justify-evenly lg:justify-evenly gap-4 flex-wrap">
-        {project.tags.map((tag) => (
-          <div className="text-text bg-elevated p-2 rounded-lg">{tag}</div>
-        ))}
+      <div className="flex items-center justify-center">
+        <div className="mx-2 mt-4 flex w-fit  justify-evenly lg:justify-evenly gap-4 flex-wrap">
+          {project.tags.map((tag) => (
+            <div className="text-text bg-elevated p-2 rounded-lg">{tag}</div>
+          ))}
+        </div>
       </div>
       <div className="mb-4 lg:mb-0 mt-8 flex justify-center items-center">
         <Link href={project.repoUrl}>
@@ -41,7 +41,7 @@ const Project = ({ imageOnLeft, project }) => {
   ];
   return (
     <section className="mb-16 flex-col lg:flex-row flex w-full items-center lg:items-start justify-between">
-      {imageOnLeft  ? component : component.reverse()}
+      {imageOnLeft ? component : component.reverse()}
     </section>
   );
 };
