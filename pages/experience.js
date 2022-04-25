@@ -33,6 +33,7 @@ const Experience = () => {
           <div className="flex items-center w-full md:w-3/4 lg:w-2/5 justify-between">
             {topTags.map((tag) => (
               <Tag
+                key={tag}
                 text={tag}
                 clickHandler={onTagClick}
                 selected={selectedTags.includes(tag)}
@@ -42,6 +43,7 @@ const Experience = () => {
           <div className="my-8 flex items-center w-3/4 md:w-1/2 lg:w-3/12 justify-between">
             {midTags.map((tag) => (
               <Tag
+                key={tag}
                 text={tag}
                 clickHandler={onTagClick}
                 selected={selectedTags.includes(tag)}
@@ -51,6 +53,7 @@ const Experience = () => {
           <div className="flex items-center w-full md:w-3/4 lg:w-2/5 justify-between">
             {bottomTags.map((tag) => (
               <Tag
+                key={tag}
                 text={tag}
                 clickHandler={onTagClick}
                 selected={selectedTags.includes(tag)}
@@ -63,7 +66,9 @@ const Experience = () => {
             selectedTags.length === 0 ||
             selectedTags.some((tag) => project.tags.includes(tag))
           ) {
-            return <Project imageOnLeft={i % 2 == 1} project={project} />;
+            return (
+              <Project key={i} imageOnLeft={i % 2 == 1} project={project} />
+            );
           }
         })}
       </section>

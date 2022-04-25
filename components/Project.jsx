@@ -20,7 +20,9 @@ const Project = ({ imageOnLeft, project }) => {
       <div className="flex items-center justify-center">
         <div className="mx-2 mt-4 flex w-fit  justify-evenly lg:justify-evenly gap-4 flex-wrap">
           {project.tags.map((tag) => (
-            <div className="text-text bg-elevated p-2 rounded-lg">{tag}</div>
+            <div key={tag} className="text-text bg-elevated p-2 rounded-lg">
+              {tag}
+            </div>
           ))}
         </div>
       </div>
