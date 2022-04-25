@@ -4,8 +4,13 @@ import Link from "next/link";
 
 const Project = ({ imageOnLeft, project }) => {
   const component = [
-    <img className="rounded-lg w-full lg:w-1/2" src={project.imageUrl} />,
+    <img
+      key={0}
+      className="rounded-lg w-full lg:w-1/2"
+      src={project.imageUrl}
+    />,
     <div
+      key={1}
       className={`mt-4 lg:mt-0 lg:px-8 flex flex-col justify-center h-full w-full lg:w-1/2`}
     >
       <h1
