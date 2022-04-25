@@ -9,7 +9,7 @@ const Home = () => {
     <Layout>
       <section className="h-full flex flex-col items-center justify-center">
         <h1 className="text-center text-text font-light text-5xl">
-          Hi, I&apos;m{" "}
+          👋 Hi, I&apos;m{" "}
           <span className="font-bold bg-gradient-to-r py-2 from-primary to-darkPrimary bg-clip-text text-transparent">
             Leon Rode
           </span>
