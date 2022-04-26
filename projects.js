@@ -14,7 +14,7 @@ const projects = [
       "react.js",
       "node.js",
       "mongodb",
-      "python3",
+      "python 3",
       "html",
       "javascript",
       "css",
