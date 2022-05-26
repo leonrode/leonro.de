@@ -4,7 +4,7 @@ const projects = [
     description:
       "westchestercovidtracker.com is an interactive tool to view COVID-19 case trends within municipalities of Westchester County, NY." +
       " It began tracking data since November 2020, a few months into the pandemic, and continues to publish new data daily." +
-      " The site itself was built using Next.js and features serverless API routing. A Python 3 script fetches new data and publishes them to a MongoDB Atlas database as soon as they are available.",
+      " The site itself was built using Next.js and features serverless API routing. A Python 3 script located in AWS Lambda gets called regularly by AWS EventBridge to fetch the latest data and update the site.",
     imageUrl:
       "https://camo.githubusercontent.com/a32a834663d026aaa4c6d9b540425d1463f6b02e6ba3848a1d5b5a809f50684f/68747470733a2f2f692e696d6775722e636f6d2f7830736e3662552e706e67",
     repoUrl: "https://github.com/leonrode/westchestercovidtracker.com",
@@ -18,6 +18,8 @@ const projects = [
       "html",
       "javascript",
       "css",
+      "aws lambda",
+      "aws eventbridge",
     ],
   },
   {

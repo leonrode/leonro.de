@@ -10,9 +10,24 @@ import { useState } from "react";
 
 const Experience = () => {
   const [selectedTags, setSelectedTags] = useState([]);
-  const topTags = ["mongodb", "python 3", "javascript", "node.js"];
+  const topTags = [
+    "mongodb",
+    "python 3",
+    "javascript",
+    "node.js",
+    "tailwindcss",
+  ];
   const midTags = ["html", "css", "react.js"];
-  const bottomTags = ["next.js", "aws s3", "tailwindcss", "p5.js"];
+  const bottomTags = [
+    "next.js",
+    "aws s3",
+    "aws lambda",
+    "aws eventbridge",
+
+    "p5.js",
+  ];
+
+  const tags = [...topTags, ...midTags, ...bottomTags];
 
   const onTagClick = (tag) => {
     if (selectedTags.includes(tag)) {
@@ -30,28 +45,8 @@ const Experience = () => {
           Show projects made with any of these techs
         </p>
         <div className="mt-4 mb-24 my-8 flex flex-col w-full items-center">
-          <div className="flex items-center w-full md:w-3/4 lg:w-2/5 justify-between">
-            {topTags.map((tag) => (
-              <Tag
-                key={tag}
-                text={tag}
-                clickHandler={onTagClick}
-                selected={selectedTags.includes(tag)}
-              />
-            ))}
-          </div>
-          <div className="my-8 flex items-center w-3/4 md:w-1/2 lg:w-3/12 justify-between">
-            {midTags.map((tag) => (
-              <Tag
-                key={tag}
-                text={tag}
-                clickHandler={onTagClick}
-                selected={selectedTags.includes(tag)}
-              />
-            ))}
-          </div>
-          <div className="flex items-center w-full md:w-3/4 lg:w-2/5 justify-between">
-            {bottomTags.map((tag) => (
+          <div className="flex justify-center w-full lg:w-3/5 gap-4 flex-wrap">
+            {tags.map((tag) => (
               <Tag
                 key={tag}
                 text={tag}
