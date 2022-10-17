@@ -2,7 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.outer-right {
+  box-shadow: 20px 24px 0 #ff00cc;
+}
+.outer-left {
+  box-shadow: -20px 24px 0 #ff00cc;
+}
+.fadeIn {
+  animation: fadeIn 2s forwards;
+}
+
+.fadeIn2 {
+  opacity: 0;
+  animation: fadeIn 2s forwards 0.7s;
+}
+
+.fadeIn3 {
+  opacity: 0;
+  animation: fadeIn 2s forwards 1.4s;
+}
+
+.fadeIn4 {
+  opacity: 0;
+  animation: fadeIn 2s forwards 3s;
+}
+.fadeIn5 {
+  opacity: 0;
+  animation: fadeIn 2s forwards 3.3s;
+}
+.fadeIn6 {
+  opacity: 0;
+  animation: fadeIn 2s forwards 3.6s;
+}
+.fadeIn7 {
+  opacity: 0;
+  animation: fadeIn 2s forwards 3.9s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
