@@ -5,14 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        bg: "#201E1F",
-        elevated: "#403C3E",
-        text: "#EEEEEE",
-        primary: "#E21ECB",
-        darkPrimary: "#5235a6",
-        alt: "#C6B9BF",
-      },
+      colors: {},
     },
   },
   plugins: [require("tailwindcss"), require("autoprefixer")],
