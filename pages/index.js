@@ -32,10 +32,18 @@ const Home = () => {
       </section>
       <section className="flex w-full h-full justify-between">
         <aside className="fadeIn4 md:flex flex-col w-32 hidden  h-full justify-center items-center ">
-          <a target="_blank" href="https://github.com/leonrode">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/leonrode"
+          >
             <FiGithub size={32} className="cursor-pointer my-4 text-sub" />
           </a>
-          <a target="_blank" href="https://instagram.com/leonro.de">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://instagram.com/leonro.de"
+          >
             <FiInstagram size={32} className="cursor-pointer my-4 text-sub" />
           </a>
         </aside>
@@ -46,7 +54,11 @@ const Home = () => {
           <Contact />
           <p className="text-sub mt-64">
             Designed & Developed by Leon Rode, 2022. <br />
-            <a target="_blank" href="https://github.com/leonrode/leonro.de">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/leonrode/leonro.de"
+            >
               See the source.
             </a>
           </p>

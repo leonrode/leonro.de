@@ -64,10 +64,15 @@ const Projects = () => {
             <a
               href="https://github.com/leonrode/westchestercovidtracker.com"
               target="cursor-pointer _blank"
+              rel="noreferrer"
             >
               <FiGithub size={28} />
             </a>
-            <a href="https://westchestercovidtracker.com" target="_blank">
+            <a
+              href="https://westchestercovidtracker.com"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FiExternalLink size={28} className="cursor-pointer ml-2" />
             </a>
           </div>
@@ -112,10 +117,15 @@ const Projects = () => {
             <a
               href="https://github.com/leonrode/mazzle"
               target="cursor-pointer _blank"
+              rel="noreferrer"
             >
               <FiGithub size={28} />
             </a>
-            <a href="https://mazzle.vercel.app" target="_blank">
+            <a
+              href="https://mazzle.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FiExternalLink size={28} className="cursor-pointer ml-2" />
             </a>
           </div>
@@ -148,10 +158,15 @@ const Projects = () => {
             <a
               href="https://github.com/leonrode/sports-photo-app"
               target="cursor-pointer _blank"
+              rel="noreferrer"
             >
               <FiGithub size={28} />
             </a>
-            <a href="https://elliott-photo-app.vercel.app" target="_blank">
+            <a
+              href="https://elliott-photo-app.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FiExternalLink size={28} className="cursor-pointer ml-2" />
             </a>
           </div>
@@ -173,7 +188,11 @@ const Projects = () => {
             <span className="text-primary">tailwind</span>
           </div>
           <div className="absolute bottom-8 left-6 flex items-center text-sub justify-start justify-self-end">
-            <a href="https://disturbthenoize.com" target="_blank">
+            <a
+              href="https://disturbthenoize.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FiExternalLink size={28} className="cursor-pointer" />
             </a>
           </div>
@@ -196,6 +215,7 @@ const Projects = () => {
             <a
               href="https://github.com/leonrode/solo-chess-solver-js"
               target="cursor-pointer _blank"
+              rel="noreferrer"
             >
               <FiGithub size={28} />
             </a>
