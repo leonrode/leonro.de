@@ -4,14 +4,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      serif: "Playfair Display",
+    },
     extend: {
       colors: {
-        bg: "#201E1F",
-        elevated: "#403C3E",
-        text: "#EEEEEE",
-        primary: "#E21ECB",
-        darkPrimary: "#5235a6",
-        alt: "#C6B9BF",
+        bg: "#201e1f",
+        elevated: "#2B292A",
+        primary: "#FF00CC",
+        sub: "#A5A5A5",
       },
     },
   },
