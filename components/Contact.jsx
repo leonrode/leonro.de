@@ -6,7 +6,6 @@ const Contact = () => {
   const ref = useRef();
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      console.log(entries);
       if (
         entries[0].target.isEqualNode(ref.current) &&
         entries[0].isIntersecting

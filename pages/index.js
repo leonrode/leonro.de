@@ -4,7 +4,24 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import { FiGithub, FiInstagram } from "react-icons/fi";
+import { useEffect, useRef } from "react";
 const Home = () => {
+  const aboutRef = useRef();
+  const projectRef = useRef();
+  const contactRef = useRef();
+  useEffect(() => {
+    const listener = document.addEventListener("keyup", (e) => {
+      if (e.key === "a") {
+        aboutRef.current.scrollIntoView();
+      } else if (e.key === "p") {
+        projectRef.current.scrollIntoView();
+      } else if (e.key === "c") {
+        contactRef.current.scrollIntoView();
+      }
+    });
+
+    return () => document.removeEventListener("keyup", listener);
+  }, []);
   return (
     <main className="main relative w-screen h-screen bg-bg">
       <section className="bg-bg z-50 top-0 absolute w-full py-4 md:py-8 px-8  flex items-center justify-between">
@@ -14,17 +31,17 @@ const Home = () => {
         <div className="invisible md:visible flex w-1/6 justify-between items-center">
           <h2 className="fadeIn5 text-white">
             <a href="#header">
-              <span className="text-primary">a</span>bout
+              <span className="text-primary underline underline-offset-4">a</span>bout
             </a>
           </h2>
           <h2 className="fadeIn6 text-white">
             <a href="#projects">
-              <span className="text-primary">p</span>rojects
+              <span className="text-primary underline underline-offset-4">p</span>rojects
             </a>
           </h2>
           <h2 className="fadeIn7 text-white">
             <a href="#contact">
-              <span className="text-primary">c</span>ontact
+              <span className="text-primary underline underline-offset-4">c</span>ontact
             </a>
           </h2>
         </div>
@@ -49,9 +66,15 @@ const Home = () => {
         </aside>
         <main className="overflow-y-scroll overflow-x-hidden flex flex-col items-start w-full lg:px-48 pt-32 md:pt-64 pb-32 px-8 md:px-16">
           <Me />
-          <About />
-          <Projects />
-          <Contact />
+          <div ref={aboutRef}>
+            <About />
+          </div>
+          <div ref={projectRef}>
+            <Projects />
+          </div>
+          <div ref={contactRef}>
+            <Contact />
+          </div>
           <p className="text-sub mt-64">
             Designed & Developed by Leon Rode, 2022. <br />
             <a
